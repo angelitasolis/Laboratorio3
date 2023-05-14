@@ -1,4 +1,14 @@
-com\mariangel\lab3\App.class
 com\mariangel\lab3\PrimaryController.class
-com\mariangel\lab3\SecondaryController.class
+com\mariangel\lab3\BuscarPacienteController.class
+com\mariangel\lab3\Controller.class
+com\mariangel\lab3\PacientesController.class
+com\mariangel\lab3\Pacientes.class
+com\mariangel\lab3\ModificarPacientesController.class
+com\mariangel\lab3\Mensaje.class
 module-info.class
+com\mariangel\lab3\Citas.class
+com\mariangel\lab3\App.class
+com\mariangel\lab3\SecondaryController.class
+com\mariangel\lab3\Respuesta.class
+.netbeans_automatic_build
+com\mariangel\lab3\PacienteService.class

@@ -14,4 +14,11 @@ public class PrimaryController {
     private void cambiarBuscarPaciente() throws IOException {
         App.setRoot("buscar-paciente");
     }
+    
+    
+     @FXML
+    private void cambiarEdicionPaciente() throws IOException {
+        App.setRoot("modificar-pacientes");
+    }
+    
 }

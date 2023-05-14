@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="950.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mariangel.lab3.PrimaryController">
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="950.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mariangel.lab3.PacientesController">
     <children>
       <Label layoutX="320.0" layoutY="52.0" text="SISTEMA DE ADMINISTRACION DE CONSULTORIOS DENTALES" />
       <Label layoutX="63.0" layoutY="266.0" text="Fecha de nacimiento" />
@@ -26,8 +26,8 @@
       <TextArea fx:id="textAreaDireccion" layoutX="187.0" layoutY="430.0" prefHeight="98.0" prefWidth="557.0" />
       <Label layoutX="132.0" layoutY="193.0" text="Cédula" />
       <TextField fx:id="textFieldCedula" layoutX="187.0" layoutY="189.0" />
-      <Button fx:id="btnGuardarPaciente" layoutX="133.0" layoutY="571.0" mnemonicParsing="false" text="Guardar Paciente" />
-      <Button fx:id="btnLimpiarPaciente" layoutX="435.0" layoutY="571.0" mnemonicParsing="false" text="Limpiar Paciente" />
+      <Button fx:id="btnGuardarPaciente" layoutX="133.0" layoutY="571.0" mnemonicParsing="false" onAction="#OnGuardarPaciente" text="Guardar Paciente" />
+      <Button fx:id="btnLimpiarPaciente" layoutX="435.0" layoutY="571.0" mnemonicParsing="false" onAction="#onLimpiarPaciente" text="Limpiar Paciente" />
       <Label layoutX="731.0" layoutY="619.0" text="Lab III. Mariángel Solís Ceciliano" />
    </children>
 </AnchorPane>

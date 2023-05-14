@@ -4,7 +4,7 @@
  */
 package com.mariangel.lab3;
 
-import com.mariangel.laboratorioiii.PacienteService;
+import java.io.IOException;
 import java.net.URL;
 import java.time.ZoneId;
 import java.util.Date;
@@ -24,6 +24,22 @@ import javafx.scene.control.TextField;
  * @author Administrador
  */
 public class PacientesController extends Controller implements Initializable {
+    
+        @FXML
+    private void cambiarRegistroPaciente() throws IOException {
+        App.setRoot("modificar-pacientes");
+    }
+    
+    @FXML
+    private void cambiarBuscarPaciente() throws IOException {
+        App.setRoot("buscar-paciente");
+    }
+    
+    
+     @FXML
+    private void cambiarEdicionPaciente() throws IOException {
+        App.setRoot("modificar-pacientes");
+    }
 
     private PacienteService pacienteService = new PacienteService();
 
@@ -83,26 +99,15 @@ public class PacientesController extends Controller implements Initializable {
 
     }
 
-    @FXML
-    void onEdicionPacientes(ActionEvent event) {
-        FlowController.getInstance().goView("ModificarPacientes");
-    }
-
+ 
     @FXML
     void onLimpiarPaciente(ActionEvent event) {
         limpiarCampos();
     }
 
-    @FXML
-    void onRegistroPacientes(ActionEvent event) {
-        FlowController.getInstance().goView("Pacientes");
-    }
+ 
     
-        @FXML
-    void onBuscarPacientes(ActionEvent event) {
-    FlowController.getInstance().goView("BuscarPaciente");
-    }
-
+    
     @Override
     public void initialize() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody

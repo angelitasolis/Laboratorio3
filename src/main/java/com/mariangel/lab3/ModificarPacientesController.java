@@ -4,6 +4,7 @@
  */
 package com.mariangel.lab3;
 
+import java.io.IOException;
 import java.net.URL;
 import java.time.ZoneId;
 import java.util.Date;
@@ -107,16 +108,27 @@ public class ModificarPacientesController extends Controller implements Initiali
         limpiarCampos();
     }
 
-    @FXML
-    void onRegistroPacientes(ActionEvent event) {
-        FlowController.getInstance().goView("Pacientes");
-    }
+  
 
     @Override
     public void initialize() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-
+    @FXML
+    private void cambiarRegistroPaciente() throws IOException {
+        App.setRoot("modificar-pacientes");
+    }
+    
+    @FXML
+    private void cambiarBuscarPaciente() throws IOException {
+        App.setRoot("buscar-paciente");
+    }
+    
+    
+     @FXML
+    private void cambiarEdicionPaciente() throws IOException {
+        App.setRoot("modificar-pacientes");
+    }
     private void limpiarCampos() {
         textFieldCedula.clear();
         textFieldNombre.clear();
